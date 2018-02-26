@@ -112,3 +112,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+source ~/.bin/git-completion.bash
+export PATH=~/.bin/:$PATH
