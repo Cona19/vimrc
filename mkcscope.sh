@@ -6,6 +6,6 @@ rm -rf cscope.files cscope.files
 
 find . \( -name '*.c' -o -name '*.i' -o -name '*.ic' -o -name '*.cpp' \
     -o -name '*.cc' -o -name '*.h' -o -name '*.s' -o -name '*.S' \
-    -o -name '*.hpp' \) -print > cscope.files
+    -o -name '*.hpp' -o -name '*.java' \) -print > cscope.files
 
-cscope -i cscope.files
+cscope -b -q -k
